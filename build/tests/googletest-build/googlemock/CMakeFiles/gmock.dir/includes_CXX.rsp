@@ -1,0 +1,1 @@
+-I"D:/VS Code/program/C++/softwarelab3/googletest-1.17.0/googlemock/include" -I"D:/VS Code/program/C++/softwarelab3/googletest-1.17.0/googlemock" -isystem "D:/VS Code/program/C++/softwarelab3/googletest-1.17.0/googletest/include" -isystem "D:/VS Code/program/C++/softwarelab3/googletest-1.17.0/googletest"

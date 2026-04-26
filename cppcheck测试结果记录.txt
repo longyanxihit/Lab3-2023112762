@@ -1,0 +1,144 @@
+PS D:\VS Code\program\C++\softwarelab3> cppcheck --enable=all NEWWordGraphProcessor.cpp
+Checking NEWWordGraphProcessor.cpp ...
+NEWWordGraphProcessor.cpp:12:2: information: Include file: <iostream> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <iostream>
+ ^
+NEWWordGraphProcessor.cpp:13:2: information: Include file: <fstream> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <fstream>
+ ^
+NEWWordGraphProcessor.cpp:14:2: information: Include file: <sstream> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <sstream>
+ ^
+NEWWordGraphProcessor.cpp:15:2: information: Include file: <string> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <string>
+ ^
+NEWWordGraphProcessor.cpp:16:2: information: Include file: <vector> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <vector>
+ ^
+NEWWordGraphProcessor.cpp:17:2: information: Include file: <unordered_map> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <unordered_map>
+ ^
+NEWWordGraphProcessor.cpp:18:2: information: Include file: <map> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <map>
+ ^
+NEWWordGraphProcessor.cpp:19:2: information: Include file: <set> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <set>
+ ^
+NEWWordGraphProcessor.cpp:20:2: information: Include file: <queue> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <queue>
+ ^
+NEWWordGraphProcessor.cpp:21:2: information: Include file: <stack> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <stack>
+ ^
+NEWWordGraphProcessor.cpp:22:2: information: Include file: <algorithm> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <algorithm>
+ ^
+NEWWordGraphProcessor.cpp:23:2: information: Include file: <cctype> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <cctype>
+ ^
+NEWWordGraphProcessor.cpp:24:2: information: Include file: <random> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <random>
+ ^
+NEWWordGraphProcessor.cpp:25:2: information: Include file: <cmath> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <cmath>
+ ^
+NEWWordGraphProcessor.cpp:26:2: information: Include file: <functional> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <functional>
+ ^
+NEWWordGraphProcessor.cpp:27:2: information: Include file: <chrono> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <chrono>
+ ^
+NEWWordGraphProcessor.cpp:28:2: information: Include file: <thread> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <thread>
+ ^
+NEWWordGraphProcessor.cpp:29:2: information: Include file: <limits> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <limits>
+ ^
+NEWWordGraphProcessor.cpp:35:2: information: Include file: <termios.h> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <termios.h>
+ ^
+NEWWordGraphProcessor.cpp:36:2: information: Include file: <unistd.h> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <unistd.h>
+ ^
+NEWWordGraphProcessor.cpp:37:2: information: Include file: <sys/select.h> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <sys/select.h>
+ ^
+NEWWordGraphProcessor.cpp:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+NEWWordGraphProcessor.cpp:391:34: style: Local variable 'w' shadows outer variable [shadowVariable]
+            for (const auto& [v, w] : adjList[u]) {
+                                 ^
+NEWWordGraphProcessor.cpp:376:21: note: Shadowed declaration
+        std::string w = toLower(word);
+                    ^
+NEWWordGraphProcessor.cpp:391:34: note: Shadow variable
+            for (const auto& [v, w] : adjList[u]) {
+                                 ^
+NEWWordGraphProcessor.cpp:438:38: style: Local variable 'w' shadows outer variable [shadowVariable]
+                for (const auto& [v, w] : adjList[u]) newPr[v] += d * pr[u] * (w / outSum);
+                                     ^
+NEWWordGraphProcessor.cpp:421:21: note: Shadowed declaration
+        std::string w = toLower(word);
+                    ^
+NEWWordGraphProcessor.cpp:438:38: note: Shadow variable
+                for (const auto& [v, w] : adjList[u]) newPr[v] += d * pr[u] * (w / outSum);
+                                     ^
+NEWWordGraphProcessor.cpp:603:26: style: Parameter 'argv' can be declared as const array [constParameter]
+int main(int argc, char* argv[]) {
+                         ^
+NEWWordGraphProcessor.cpp:101:28: style: Consider using std::transform algorithm instead of a raw loop. [useStlAlgorithm]
+    for (char c : s) lower.push_back(std::tolower(static_cast<unsigned char>(c)));
+                           ^
+NEWWordGraphProcessor.cpp:108:28: style: Consider using std::transform algorithm instead of a raw loop. [useStlAlgorithm]
+    for (char c : s) lower.push_back(std::tolower(static_cast<unsigned char>(c)));
+                           ^
+NEWWordGraphProcessor.cpp:138:30: style: Consider using std::transform algorithm instead of a raw loop. [useStlAlgorithm]
+        for (char c : s) res.push_back(std::tolower(static_cast<unsigned char>(c)));
+                             ^
+NEWWordGraphProcessor.cpp:208:48: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+        for (const auto& p : adjList[idx]) sum += p.second;
+                                               ^
+NEWWordGraphProcessor.cpp:433:77: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+            for (int u = 0; u < n; ++u) if (adjList[u].empty()) danglingSum += pr[u];
+                                                                            ^
+NEWWordGraphProcessor.cpp:691:59: style: Variable 'backToMenu' is assigned a value that is never used. [unreadVariable]
+                    if (isBackCommand(line)) { backToMenu = true; break; }
+                                                          ^
+NEWWordGraphProcessor.cpp:706:61: style: Variable 'backToMenu' is assigned a value that is never used. [unreadVariable]
+                        if (isBackCommand(w2)) { backToMenu = true; break; }
+                                                            ^
+NEWWordGraphProcessor.cpp:726:59: style: Variable 'backToMenu' is assigned a value that is never used. [unreadVariable]
+                    if (isBackCommand(text)) { backToMenu = true; break; }
+                                                          ^
+NEWWordGraphProcessor.cpp:737:59: style: Variable 'backToMenu' is assigned a value that is never used. [unreadVariable]
+                    if (isBackCommand(line)) { backToMenu = true; break; }
+                                                          ^
+NEWWordGraphProcessor.cpp:752:61: style: Variable 'backToMenu' is assigned a value that is never used. [unreadVariable]
+                        if (isBackCommand(w2)) { backToMenu = true; break; }
+                                                            ^
+NEWWordGraphProcessor.cpp:772:59: style: Variable 'backToMenu' is assigned a value that is never used. [unreadVariable]
+                    if (isBackCommand(word)) { backToMenu = true; break; }
+                                                          ^
+NEWWordGraphProcessor.cpp:788:59: style: Variable 'backToMenu' is assigned a value that is never used. [unreadVariable]
+                    if (isBackCommand(word)) { backToMenu = true; break; }
+                                                          ^
+NEWWordGraphProcessor.cpp:806:60: style: Variable 'backToMenu' is assigned a value that is never used. [unreadVariable]
+                    if (isBackCommand(input)) { backToMenu = true; break; }
+                                                           ^
+NEWWordGraphProcessor.cpp:32:2: information: Include file: <windows.h> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <windows.h>
+ ^
+NEWWordGraphProcessor.cpp:33:2: information: Include file: <conio.h> not found. Please note: Standard library headers do not need to be provided to get proper results. [missingIncludeSystem]
+#include <conio.h>
+ ^
+Checking NEWWordGraphProcessor.cpp: _WIN32=_WIN32...
+NEWWordGraphProcessor.cpp:204:24: style: The function 'getWord' is never used. [unusedFunction]
+    const std::string& getWord(int idx) const { return nodes[idx]; }
+                       ^
+NEWWordGraphProcessor.cpp:205:41: style: The function 'getOutEdges' is never used. [unusedFunction]
+    const std::unordered_map<int, int>& getOutEdges(int idx) const { return adjList[idx]; }
+                                        ^
+nofile:0:0: information: Active checkers: 173/186 (use --checkers-report=<filename> to see details) [checkersReport]
+
+PS D:\VS Code\program\C++\softwarelab3> 

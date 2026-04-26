@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/VS Code/program/C++/softwarelab3/build/cmake_install.cmake",
+		"D:/VS Code/program/C++/softwarelab3/build/tests/cmake_install.cmake",
+		"D:/VS Code/program/C++/softwarelab3/build/tests/googletest-build/cmake_install.cmake",
+		"D:/VS Code/program/C++/softwarelab3/build/tests/googletest-build/googlemock/cmake_install.cmake",
+		"D:/VS Code/program/C++/softwarelab3/build/tests/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

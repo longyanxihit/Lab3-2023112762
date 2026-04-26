@@ -1,0 +1,3 @@
+D:\tools\cmake\bin\cmake.exe -E rm -f CMakeFiles\wordgraph.dir/objects.a
+D:\mingw64\bin\ar.exe qc CMakeFiles\wordgraph.dir/objects.a @CMakeFiles\wordgraph.dir\objects1.rsp
+D:\mingw64\bin\c++.exe -std=c++17 -Wl,--whole-archive CMakeFiles\wordgraph.dir/objects.a -Wl,--no-whole-archive -o wordgraph.exe -Wl,--out-implib,libwordgraph.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\wordgraph.dir\linkLibs.rsp

@@ -1,0 +1,10 @@
+"D:\VS Code\program\C++\softwarelab3"            //根目录
+
+cpplint NEWWordGraphProcessor.cpp                //cpplint代码规范检查
+cpplint TextGraph.cpp                            //cpplint代码规范检查
+
+cppcheck --enable=all NEWWordGraphProcessor.cpp  //Cppcheck静态缺陷分析
+cppcheck --enable=all TextGraph.cpp              //Cppcheck静态缺陷分析
+
+.\tests\test_black_box.exe                       //黑盒
+.\tests\test_white_box.exe                       //白盒

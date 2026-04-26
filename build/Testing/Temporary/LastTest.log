@@ -1,0 +1,93 @@
+Start testing: Apr 23 19:54 中国标准时间
+----------------------------------------------------------
+1/2 Testing: BlackBoxTest
+1/2 Test: BlackBoxTest
+Command: "D:/VS Code/program/C++/softwarelab3/build/tests/test_black_box.exe"
+Directory: D:/VS Code/program/C++/softwarelab3/build/tests
+"BlackBoxTest" start time: Apr 23 19:54 中国标准时间
+Output:
+----------------------------------------------------------
+[==========] Running 11 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 11 tests from BridgeWordsBlackBoxTest
+[ RUN      ] BridgeWordsBlackBoxTest.BothExistWithMultipleBridges
+[       OK ] BridgeWordsBlackBoxTest.BothExistWithMultipleBridges (0 ms)
+[ RUN      ] BridgeWordsBlackBoxTest.BothExistWithSingleBridge
+[       OK ] BridgeWordsBlackBoxTest.BothExistWithSingleBridge (0 ms)
+[ RUN      ] BridgeWordsBlackBoxTest.BothExistNoBridge
+[       OK ] BridgeWordsBlackBoxTest.BothExistNoBridge (0 ms)
+[ RUN      ] BridgeWordsBlackBoxTest.FirstWordNotExist
+[       OK ] BridgeWordsBlackBoxTest.FirstWordNotExist (0 ms)
+[ RUN      ] BridgeWordsBlackBoxTest.SecondWordNotExist
+[       OK ] BridgeWordsBlackBoxTest.SecondWordNotExist (0 ms)
+[ RUN      ] BridgeWordsBlackBoxTest.NeitherExist
+[       OK ] BridgeWordsBlackBoxTest.NeitherExist (0 ms)
+[ RUN      ] BridgeWordsBlackBoxTest.EmptyWord
+[       OK ] BridgeWordsBlackBoxTest.EmptyWord (0 ms)
+[ RUN      ] BridgeWordsBlackBoxTest.VeryLongWord
+[       OK ] BridgeWordsBlackBoxTest.VeryLongWord (0 ms)
+[ RUN      ] BridgeWordsBlackBoxTest.CaseInsensitive
+[       OK ] BridgeWordsBlackBoxTest.CaseInsensitive (0 ms)
+[ RUN      ] BridgeWordsBlackBoxTest.SelfLoopAsBridge
+[       OK ] BridgeWordsBlackBoxTest.SelfLoopAsBridge (0 ms)
+[ RUN      ] BridgeWordsBlackBoxTest.IsolatedNodeAsStart
+[       OK ] BridgeWordsBlackBoxTest.IsolatedNodeAsStart (0 ms)
+[----------] 11 tests from BridgeWordsBlackBoxTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 11 tests.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"BlackBoxTest" end time: Apr 23 19:54 中国标准时间
+"BlackBoxTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: WhiteBoxTest
+2/2 Test: WhiteBoxTest
+Command: "D:/VS Code/program/C++/softwarelab3/build/tests/test_white_box.exe"
+Directory: D:/VS Code/program/C++/softwarelab3/build/tests
+"WhiteBoxTest" start time: Apr 23 19:54 中国标准时间
+Output:
+----------------------------------------------------------
+[==========] Running 11 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 11 tests from ShortestPathWhiteBoxTest
+[ RUN      ] ShortestPathWhiteBoxTest.BothWordsNotInGraph
+[       OK ] ShortestPathWhiteBoxTest.BothWordsNotInGraph (0 ms)
+[ RUN      ] ShortestPathWhiteBoxTest.FirstWordNotInGraph
+[       OK ] ShortestPathWhiteBoxTest.FirstWordNotInGraph (0 ms)
+[ RUN      ] ShortestPathWhiteBoxTest.SecondWordNotInGraph
+[       OK ] ShortestPathWhiteBoxTest.SecondWordNotInGraph (0 ms)
+[ RUN      ] ShortestPathWhiteBoxTest.NoPathBetweenWords
+[       OK ] ShortestPathWhiteBoxTest.NoPathBetweenWords (0 ms)
+[ RUN      ] ShortestPathWhiteBoxTest.UniqueShortestPath
+[       OK ] ShortestPathWhiteBoxTest.UniqueShortestPath (0 ms)
+[ RUN      ] ShortestPathWhiteBoxTest.MultipleShortestPathsWithWeights
+[       OK ] ShortestPathWhiteBoxTest.MultipleShortestPathsWithWeights (0 ms)
+[ RUN      ] ShortestPathWhiteBoxTest.SameWord
+[       OK ] ShortestPathWhiteBoxTest.SameWord (0 ms)
+[ RUN      ] ShortestPathWhiteBoxTest.SingleSourceSourceNotInGraph
+[       OK ] ShortestPathWhiteBoxTest.SingleSourceSourceNotInGraph (0 ms)
+[ RUN      ] ShortestPathWhiteBoxTest.SingleSourceToAllReachable
+[       OK ] ShortestPathWhiteBoxTest.SingleSourceToAllReachable (0 ms)
+[ RUN      ] ShortestPathWhiteBoxTest.SingleSourceWithUnreachable
+[       OK ] ShortestPathWhiteBoxTest.SingleSourceWithUnreachable (0 ms)
+[ RUN      ] ShortestPathWhiteBoxTest.SingleSourceWeightedGraph
+[       OK ] ShortestPathWhiteBoxTest.SingleSourceWeightedGraph (0 ms)
+[----------] 11 tests from ShortestPathWhiteBoxTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 11 tests.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"WhiteBoxTest" end time: Apr 23 19:54 中国标准时间
+"WhiteBoxTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 23 19:54 中国标准时间
